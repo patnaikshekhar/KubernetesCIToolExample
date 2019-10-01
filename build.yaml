@@ -1,0 +1,6 @@
+repository: https://github.com/patnaikshekhar/KubernetesCIToolExample
+steps:
+- image: golang:1.13.0-alpine3.10
+  args: ["go", "test"]
+- image: golang:1.13.0-alpine3.10
+  args: ["go", "build", "-o", "app"]
